@@ -15,8 +15,15 @@ import csv
 
 
 datafile = open('ALH_CloudWatch.csv', 'r')
-myreader = csv.reader(datafile)
+myreader = csv.reader(datafile), delimiter=',')
+rowcount == 0
+uniqueId == 'start'
 
 for row in myreader:
-    if row[4] == 'i-0c5b4a39d38e5a626':
-        print row
+    if uniqueId == row[4]:
+        rowcount = rowcount +1
+    else:
+        print(rowcount)
+        rowcount == 0
+        uniqueId == row[4]
+    
