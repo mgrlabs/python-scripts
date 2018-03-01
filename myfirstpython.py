@@ -18,5 +18,5 @@ datafile = open('ALH_CloudWatch.csv', 'r')
 myreader = csv.reader(datafile)
 
 for row in myreader:
-    if row[0] == 'humanReadableTimestamp':
+    if row[4] == 'i-0c5b4a39d38e5a626':
         print row
