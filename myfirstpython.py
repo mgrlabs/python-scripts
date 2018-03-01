@@ -15,7 +15,7 @@ import csv
 
 
 datafile = open('ALH_CloudWatch.csv', 'r')
-myreader = csv.reader(datafile), delimiter=',')
+myreader = csv.reader(datafile, delimiter=',')
 rowcount == 0
 uniqueId == 'start'
 
