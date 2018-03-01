@@ -7,8 +7,15 @@ import csv
 #     for row in reader:
 #         print row
 
-with open('ALH_CloudWatch.csv') as csvfile:
-    readCSV = csv.reader(csvfile, delimiter=',')
-    for row in readCSV:
-    if row[0] == 'humanReadableTimestamp':
-        print(row[0])        
+# with open('ALH_CloudWatch.csv') as csvfile:
+#     readCSV = csv.reader(csvfile, delimiter=',')
+#     for row in readCSV:
+#         if row[0] == 'humanReadableTimestamp':
+#             print(row[0])        
+
+
+datafile = open('ALH_CloudWatch.csv', 'r')
+myreader = csv.reader(datafile)
+
+for row in myreader:
+    print(row[0], row[1], row[2])
