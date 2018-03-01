@@ -20,10 +20,10 @@ rowcount = 0
 uniqueId = 'start'
 
 for row in myreader:
-    print(row[4])
     if uniqueId == row[4]:
         rowcount = rowcount +1
     else:
+        print(row[4])
         print(rowcount)
         rowcount = 0
         uniqueId = row[4]
