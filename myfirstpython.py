@@ -2,7 +2,7 @@
 import boto3
 import csv
 
-with open('ALH_CloudWatch.csv', 'rb') as f:
+with open('ALH_CloudWatch.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         print row
