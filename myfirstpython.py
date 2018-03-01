@@ -19,4 +19,4 @@ myreader = csv.reader(datafile)
 
 for row in myreader:
     if row[0] == 'humanReadableTimestamp':
-        print(row[0], row[1], row[2])
+        print row
