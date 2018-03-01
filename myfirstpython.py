@@ -10,4 +10,5 @@ instance = ec2.Instance('i-0c5b4a39d38e5a626')
 #for bucket in s3.buckets.all():
 #    print(bucket.name)
 
-print(instance.state)
+for instance in ec2.instances.all():
+    print(instance.state)
