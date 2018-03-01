@@ -11,4 +11,4 @@ instance = ec2.Instance('i-0c5b4a39d38e5a626')
 #    print(bucket.name)
 
 for instance in ec2.instances.all():
-    print(instance.state)
+    print(instance.instance_id, instance.state)
