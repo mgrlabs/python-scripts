@@ -10,5 +10,5 @@ import csv
 with open('ALH_CloudWatch.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
-    if row[0] == 'humanReadableTimestamp'
+    if row[0] == 'humanReadableTimestamp':
         print(row[0])        
