@@ -17,8 +17,11 @@ import numpy as np
 #             print(row[0])        
 
 
-sourceCSV = open('ALH_CloudWatch.csv', 'r')
-readerCSV = csv.reader(sourceCSV, delimiter=',')
+# sourceCSV = open('ALH_CloudWatch.csv', 'r')
+# readerCSV = csv.reader(sourceCSV, delimiter=',')
 
-for row in readerCSV:
-    print(row[4])
+# for row in readerCSV:
+#     print(row[4])
+
+df = pd.read_csv('ALH_CloudWatch.csv')
+df
