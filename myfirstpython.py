@@ -1,6 +1,9 @@
 #!/usr/bin/python
+
 import boto3
 import csv
+import pandas as pd
+import numpy as np
 
 # with open('ALH_CloudWatch.csv') as f:
 #     reader = csv.reader(f)
@@ -14,17 +17,8 @@ import csv
 #             print(row[0])        
 
 
-datafile = open('ALH_CloudWatch.csv', 'r')
-myreader = csv.reader(datafile, delimiter=',')
-rowcount = 0
-uniqueId = 'start'
+sourceCSV = open('ALH_CloudWatch.csv', 'r')
+readerCSV = csv.reader(datafile, delimiter=',')
 
-for row in myreader:
-    if uniqueId == row[4]:
-        rowcount = rowcount +1
-    else:
-        print(row[4])
-        print(rowcount)
-        rowcount = 0
-        uniqueId = row[4]
-    
+for row in readCSV:
+    print(row[4])
