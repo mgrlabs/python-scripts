@@ -23,5 +23,5 @@ import numpy as np
 # for row in readerCSV:
 #     print(row[4])
 
-df = pd.read_csv('ALH_CloudWatch.csv')
+df = pd.read_csv('ALH_CloudWatch.csv', low_memory=False)
 df
