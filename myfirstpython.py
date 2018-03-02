@@ -18,7 +18,7 @@ import numpy as np
 
 
 sourceCSV = open('ALH_CloudWatch.csv', 'r')
-readerCSV = csv.reader(datafile, delimiter=',')
+readerCSV = csv.reader(sourceCSV, delimiter=',')
 
-for row in readCSV:
+for row in readerCSV:
     print(row[4])
