@@ -2,7 +2,7 @@
 
 import boto3
 import csv
-import panda as pd
+import pandas as pd
 import numpy as np
 
 # with open('ALH_CloudWatch.csv') as f:
